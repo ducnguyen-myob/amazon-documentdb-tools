@@ -73,6 +73,13 @@ python3 migrate-cdc-cluster.py --source-uri <source-cluster-uri> -- target-uri <
 
 ## Run with dockerfile (To manage the logs and maintain the service running in the background).
 
+* To build the docker image
+
+```
+docker build . -t migrate-service
+```
+  
+* To excute the sync
 ```
 docker run -d --name migrate-service \
     -e SOURCE_URI=<source-cluster-uri> \
