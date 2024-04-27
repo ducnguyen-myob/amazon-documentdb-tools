@@ -72,6 +72,11 @@ python3 migrate-cdc-cluster.py --source-uri <source-cluster-uri> -- target-uri <
 ```
 
 ## Run with dockerfile (To manage the logs and maintain the service running in the background).
+
+* To connect to mongo via mongosh
+```
+mongosh --host ci-popeye.cluster-cqcbjjh0li6g.ap-southeast-2.docdb.amazonaws.com:27017 --username master --password <Password>
+```
 * To install mongosh
 ```
 bash install-mongo.sh
