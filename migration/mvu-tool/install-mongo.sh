@@ -3,3 +3,6 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb
 sudo apt-get update
 sudo apt-get install -y mongodb-mongosh
 mongosh --version
+
+echo "Installing pymongo"
+pip3 install pymongo
